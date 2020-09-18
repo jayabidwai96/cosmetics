@@ -1,5 +1,3 @@
-
-  
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
@@ -16,24 +14,24 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Make Up
+               Make Up
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Face</a>
-                <a href="" class="dropdown-item">Eyes</a>
-                <a href="" class="dropdown-item">Lips</a>
-                <a href="" class="dropdown-item">All make up Products</a>
+                <a href="{% url 'products' %}?category=face,essentials" class="dropdown-item">Face &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=eyes" class="dropdown-item">Eyes</a>
+                <a href="{% url 'products' %}?category=lips" class="dropdown-item">Lips</a>
+                <a href="{% url 'products' %}?category=face,essentials,eyes,lips" class="dropdown-item">All Make up Products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Frangances
+               Fragrance
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Women Frangances</a>
-                <a href="" class="dropdown-item">Mens Frangances</a>
-                <a href="" class="dropdown-item">All Frangances </a>
+                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Women Fragrance</a>
+                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Men Fragrance</a>
+                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Fragrance</a>
             </div>
         </li>
 
@@ -42,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
